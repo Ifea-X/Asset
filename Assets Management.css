@@ -1,0 +1,275 @@
+.body{
+  font: 15px Arial, Helvetica, Sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.header{
+  background:#fff;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 20px 20px;
+  z-index: 3;
+  box-shadow: -6px 8px 6px -6px #000;
+}
+.navbar{
+  float: right;
+  margin-top: 8px;
+}
+.menu{
+  margin: 0;
+  padding: 0;
+}
+.menu_item{
+  float: left;
+  display: inline;
+  padding: 0 16px 0 16px;
+}
+.menu_link{
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.menu_link: hover{
+  color: #1293d4;
+  font-weight: bold;
+}
+.masthead{
+  min-height: 600px;
+  background: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%) no-repeat;
+  color: #fff;
+}
+.masthead_title{
+  margin-top: 200px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.masthead_description{
+  font-size: 20px;
+}
+.newsletter{
+  padding: 15px;
+  color: #000;
+  background: #fff;
+}
+.newsletter_title{
+  float: left;
+  font-size: 20px;
+}
+.newsletter_form{
+  float: right;
+  margin-top: 15px;
+}
+.newsletter_input{
+  width: 100%;
+  height: 35px;
+  border: 1px solid #808080;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+}
+.newsletter_input[type = "email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+  color: #fff;
+}
+.newsletter_input: focus{
+  outline: none;
+  border: 1px solid #58bff6;
+  color: #000;
+}
+.btn-submit{
+  height: 35px;
+  background: #1293d4;
+  border-radius: 4px;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+}
+.btn-submit: hover{
+  backgroung: #32b0ee;
+}
+.btn-submit: focus{
+  outline: none;
+}
+.services{
+  margin-bottom: 50px;
+}
+.service{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+.service_icon{
+  color: #4169e1;
+  font-size: 350%;
+  text-align: center;
+  padding-top: 10%;
+}
+.about{
+  background-color: #fff;
+}
+.article-col{
+  float: left;
+  width: 55%;
+}
+.article-col_description{
+  text-align: justify;
+}
+.aside{
+  float: right;
+  width: 38%;
+  margin-top: 10px;
+}
+.container-aside{
+  margin-bottom: 50px;
+}
+.request-form_label{
+  color: #808080;
+  font-weight: bold;
+}
+.newsletter_input--request-form-textarea{
+  height: 120px;
+}
+.newsletter_input--request-form-textarea: focus{
+  outline: none;
+  border: 1px solid #58bff6;
+  color: #000;
+}
+.btn-submit--request-form{
+  margin-bottom: 50px;
+  widthh: 101%;
+}
+.btn-submit--request-form: focus{
+  outline: none;
+}
+.icons-social{
+  text-align: center;
+  padding: 5px;
+}
+.menu--list-social{
+  list-style-type: none;
+}
+.icons-social_item{
+  display: inline;
+}
+.icons-social_i{
+  font-size: 23px;
+  color: #444442;
+  padding: 10px;
+  transition: all 0.3s linear;
+}
+.icons-social_i: hover{
+  color: #fff;
+  transform: translateY(-7px);
+}
+.footer{
+  padding: 40px;
+  color: #444442;
+  background-color: #111;
+  text-align: center;
+}
+.container-footer_link{
+  color: #444442;
+  text-decoration: none;
+}
+.container-footer_link: hover{
+  color: #fff;
+}
+@media(max-width: 800px){
+  .header{
+    padding-bottom: 20px;
+  }
+  .navbar{
+    text-align: center;
+	width: 100%;
+	padding: 0 20px;
+  }
+  .menu_item{
+    float: none;
+	text-align: center;
+	width: 100%;
+  }
+  .service{
+    width: 100%;
+	padding: 0;
+	text-align: center;
+	float: none;
+  }
+  .newsletter_title{
+    float: none;
+	text-align: center;
+	width: 100%;
+	margin-top: 40px;
+  }
+  .newsletter-form{
+    float: none;
+	text-align: center;
+	width: 100%;
+  }
+  .newsletter_input{
+    width: 98%;
+  }
+  .newsletter_input[type = "id no"]{
+    width: 98%;
+	margin-bottom: 5px;
+  }
+  .btn-submit{
+    display: block;
+	width: 100%;
+  }
+  .article-col{
+    float: none;
+	text-align: center;
+	width: 100%;
+  }
+  .aside{
+    width: 100%;
+	float: none;
+	text-align: center;
+	padding-bottom: 20px;
+  }
+  .container-aside{
+    margin-top: 20px;
+    width: 100%;
+    padding: 0;
+  }
+  .btn-submit--request-form{
+    width: 100%;
+  }
+}
+@media(max-width: 450px){
+  .menu_item{
+    padding: 0px 4px 0px 4px;
+  }
+  .menu_link{
+    font-size: 13px;
+  }
+  .masthead_title{
+    font-size: 45px;
+  }
+  .masthead_description{
+    font-size: 17px;
+  }
+  .newsletter_input[type = "id no"]{
+    width: 96%;
+  }
+  .container-aside{
+    width: 100%;
+  }
+  .container-aside_img{
+    height: 436px;
+  }
+}  
